@@ -1,0 +1,12 @@
+# VS Code local settings
+.vscode/
+.venv/
+__pycache__/
+*.py[cod]
+tmp/
+.codex-finalizer/
+
+# Local secrets and connection settings
+*.env
+*.user
+*.publish.xml

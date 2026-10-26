@@ -1,0 +1,171 @@
+[
+  {
+    "file": "01_schema.sql",
+    "results": []
+  },
+  {
+    "file": "02_seed_catalog.sql",
+    "results": [
+      {
+        "columns": [
+          "TotalCourses",
+          "TotalCategories",
+          "CourseCategoryLinks"
+        ],
+        "rows": [
+          [
+            131,
+            10,
+            158
+          ]
+        ]
+      },
+      {
+        "columns": [
+          "Title",
+          "DuplicateCount"
+        ],
+        "rows": []
+      },
+      {
+        "columns": [
+          "CourseId",
+          "Title"
+        ],
+        "rows": []
+      },
+      {
+        "columns": [
+          "CourseId",
+          "Title"
+        ],
+        "rows": []
+      }
+    ]
+  },
+  {
+    "file": "03_add_embedding_storage.sql",
+    "results": [
+      {
+        "columns": [
+          "ColumnName",
+          "DataType",
+          "IsNullable"
+        ],
+        "rows": [
+          [
+            "DescriptionEmbedding",
+            "vector",
+            true
+          ],
+          [
+            "EmbeddingModel",
+            "varchar",
+            true
+          ],
+          [
+            "EmbeddingGeneratedAt",
+            "datetime2",
+            true
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "file": "06_expand_catalog_scale_test.sql",
+    "results": [
+      {
+        "columns": [
+          "TotalCourses",
+          "SyntheticScaleCourses",
+          "PendingEmbeddings"
+        ],
+        "rows": [
+          [
+            131,
+            100,
+            0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "file": "07_programmability.sql",
+    "results": []
+  },
+  {
+    "file": "08_security.sql",
+    "results": []
+  },
+  {
+    "file": "10_benchmark_baseline.sql",
+    "results": []
+  },
+  {
+    "file": "09_security_tests.sql",
+    "results": [
+      {
+        "columns": [
+          "EffectiveUser",
+          "VisibleCourses"
+        ],
+        "rows": [
+          [
+            "CourseReaderDemo",
+            131
+          ]
+        ]
+      },
+      {
+        "columns": [
+          "ExpectedError",
+          "Result"
+        ],
+        "rows": [
+          [
+            229,
+            "Reader no puede leer la tabla base"
+          ]
+        ]
+      },
+      {
+        "columns": [
+          "ExpectedError",
+          "Result"
+        ],
+        "rows": [
+          [
+            229,
+            "Reader no puede editar"
+          ]
+        ]
+      },
+      {
+        "columns": [
+          "EffectiveUser",
+          "UpdatedRows"
+        ],
+        "rows": [
+          [
+            "CourseEditorDemo",
+            1
+          ]
+        ]
+      },
+      {
+        "columns": [
+          "ExpectedError",
+          "Result"
+        ],
+        "rows": [
+          [
+            229,
+            "Editor no puede borrar"
+          ]
+        ]
+      }
+    ]
+  }
+]

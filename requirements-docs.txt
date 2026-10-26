@@ -1,0 +1,4 @@
+# Optional PDF authoring; not needed to run the recommender.
+reportlab>=4,<5
+Pillow>=10,<13
+pypdf>=5,<7

@@ -1,0 +1,851 @@
+{
+  "timestamp": "2026-10-26T21:59:51.224742+00:00",
+  "cases": [
+    {
+      "name": "semantic",
+      "request": {
+        "query": "Quiero aprender a analizar ventas con SQL y tengo conocimientos básicos"
+      },
+      "results": [
+        {
+          "id": 1,
+          "title": "Fundamentos de SQL para análisis de ventas",
+          "description": "Aprende a consultar tablas de ventas con SELECT, filtros, agrupaciones y JOIN para responder preguntas habituales del negocio.",
+          "level": "Beginner",
+          "durationMinutes": 180,
+          "categories": "Análisis de datos, SQL",
+          "categoryIds": [
+            2,
+            1
+          ],
+          "cosineDistance": 0.2883
+        },
+        {
+          "id": 12,
+          "title": "Funciones de ventana para tendencias de ventas",
+          "description": "Calcula acumulados, rankings y variaciones entre meses para explicar la evolución de ventas sin perder el detalle de cada fila.",
+          "level": "Intermediate",
+          "durationMinutes": 180,
+          "categories": "Análisis de datos, SQL",
+          "categoryIds": [
+            2,
+            1
+          ],
+          "cosineDistance": 0.4537
+        },
+        {
+          "id": 9,
+          "title": "SQL básico para filtrar y resumir datos",
+          "description": "Practica consultas sencillas para buscar registros, ordenar resultados y calcular totales por cliente o producto.",
+          "level": "Beginner",
+          "durationMinutes": 90,
+          "categories": "SQL",
+          "categoryIds": [
+            1
+          ],
+          "cosineDistance": 0.4661
+        },
+        {
+          "id": 124,
+          "title": "Consultas para segmentar clientes",
+          "description": "Construye consultas con filtros y agrupaciones para comparar compras, frecuencia y valor por segmento.",
+          "level": "Beginner",
+          "durationMinutes": 180,
+          "categories": "SQL",
+          "categoryIds": [
+            1
+          ],
+          "cosineDistance": 0.5048
+        },
+        {
+          "id": 10,
+          "title": "Consultas SQL para inventario y logística",
+          "description": "Combina existencias, pedidos y envíos para detectar roturas de stock y medir tiempos de entrega.",
+          "level": "Intermediate",
+          "durationMinutes": 210,
+          "categories": "Análisis de datos, SQL",
+          "categoryIds": [
+            2,
+            1
+          ],
+          "cosineDistance": 0.514
+        },
+        {
+          "id": 5,
+          "title": "Modelado de datos y DAX en Power BI",
+          "description": "Crea modelos semánticos con relaciones y medidas DAX para analizar ventas por fecha, producto y región.",
+          "level": "Intermediate",
+          "durationMinutes": 300,
+          "categories": "Análisis de datos, Power BI",
+          "categoryIds": [
+            2,
+            3
+          ],
+          "cosineDistance": 0.5146
+        },
+        {
+          "id": 127,
+          "title": "JOIN de ventas, clientes y productos",
+          "description": "Relaciona tablas transaccionales y detecta filas sin correspondencia mediante consultas de unión.",
+          "level": "Beginner",
+          "durationMinutes": 270,
+          "categories": "SQL",
+          "categoryIds": [
+            1
+          ],
+          "cosineDistance": 0.5219
+        },
+        {
+          "id": 23,
+          "title": "Azure SQL Database: fundamentos",
+          "description": "Aprende a aprovisionar y consultar una base de datos SQL administrada en Azure, y entiende sus opciones de conectividad.",
+          "level": "Beginner",
+          "durationMinutes": 180,
+          "categories": "Azure, SQL",
+          "categoryIds": [
+            4,
+            1
+          ],
+          "cosineDistance": 0.5261
+        },
+        {
+          "id": 16,
+          "title": "Excel y SQL para preparar informes",
+          "description": "Compara el análisis en hojas de cálculo con consultas SQL y prepara resultados consistentes para informes periódicos.",
+          "level": "Beginner",
+          "durationMinutes": 120,
+          "categories": "Análisis de datos, SQL",
+          "categoryIds": [
+            2,
+            1
+          ],
+          "cosineDistance": 0.5317
+        },
+        {
+          "id": 2,
+          "title": "T-SQL intermedio: CTE y funciones de ventana",
+          "description": "Resuelve análisis por periodos y comparaciones entre filas con CTE, funciones de ventana y expresiones T-SQL.",
+          "level": "Intermediate",
+          "durationMinutes": 240,
+          "categories": "Análisis de datos, SQL",
+          "categoryIds": [
+            2,
+            1
+          ],
+          "cosineDistance": 0.533
+        }
+      ]
+    },
+    {
+      "name": "beginner",
+      "request": {
+        "query": "Quiero aprender a analizar ventas con SQL y tengo conocimientos básicos",
+        "level": "Beginner"
+      },
+      "results": [
+        {
+          "id": 1,
+          "title": "Fundamentos de SQL para análisis de ventas",
+          "description": "Aprende a consultar tablas de ventas con SELECT, filtros, agrupaciones y JOIN para responder preguntas habituales del negocio.",
+          "level": "Beginner",
+          "durationMinutes": 180,
+          "categories": "Análisis de datos, SQL",
+          "categoryIds": [
+            2,
+            1
+          ],
+          "cosineDistance": 0.2883
+        },
+        {
+          "id": 9,
+          "title": "SQL básico para filtrar y resumir datos",
+          "description": "Practica consultas sencillas para buscar registros, ordenar resultados y calcular totales por cliente o producto.",
+          "level": "Beginner",
+          "durationMinutes": 90,
+          "categories": "SQL",
+          "categoryIds": [
+            1
+          ],
+          "cosineDistance": 0.4661
+        },
+        {
+          "id": 124,
+          "title": "Consultas para segmentar clientes",
+          "description": "Construye consultas con filtros y agrupaciones para comparar compras, frecuencia y valor por segmento.",
+          "level": "Beginner",
+          "durationMinutes": 180,
+          "categories": "SQL",
+          "categoryIds": [
+            1
+          ],
+          "cosineDistance": 0.5048
+        },
+        {
+          "id": 127,
+          "title": "JOIN de ventas, clientes y productos",
+          "description": "Relaciona tablas transaccionales y detecta filas sin correspondencia mediante consultas de unión.",
+          "level": "Beginner",
+          "durationMinutes": 270,
+          "categories": "SQL",
+          "categoryIds": [
+            1
+          ],
+          "cosineDistance": 0.5219
+        },
+        {
+          "id": 23,
+          "title": "Azure SQL Database: fundamentos",
+          "description": "Aprende a aprovisionar y consultar una base de datos SQL administrada en Azure, y entiende sus opciones de conectividad.",
+          "level": "Beginner",
+          "durationMinutes": 180,
+          "categories": "Azure, SQL",
+          "categoryIds": [
+            4,
+            1
+          ],
+          "cosineDistance": 0.5261
+        },
+        {
+          "id": 16,
+          "title": "Excel y SQL para preparar informes",
+          "description": "Compara el análisis en hojas de cálculo con consultas SQL y prepara resultados consistentes para informes periódicos.",
+          "level": "Beginner",
+          "durationMinutes": 120,
+          "categories": "Análisis de datos, SQL",
+          "categoryIds": [
+            2,
+            1
+          ],
+          "cosineDistance": 0.5317
+        },
+        {
+          "id": 4,
+          "title": "Power BI: primeros informes de ventas",
+          "description": "Conecta datos de ventas, crea visualizaciones y construye un informe interactivo para explorar resultados comerciales.",
+          "level": "Beginner",
+          "durationMinutes": 150,
+          "categories": "Análisis de datos, Power BI",
+          "categoryIds": [
+            2,
+            3
+          ],
+          "cosineDistance": 0.5489
+        },
+        {
+          "id": 13,
+          "title": "Introducción a la administración de SQL Server",
+          "description": "Revisa configuración básica, usuarios, trabajos, mantenimiento y supervisión de una instancia de SQL Server.",
+          "level": "Beginner",
+          "durationMinutes": 240,
+          "categories": "Administración de bases de datos, SQL",
+          "categoryIds": [
+            6,
+            1
+          ],
+          "cosineDistance": 0.5779
+        },
+        {
+          "id": 97,
+          "title": "Modelo estrella para ventas minoristas",
+          "description": "Organiza hechos y dimensiones de ventas, fechas y productos para facilitar filtros y agregaciones.",
+          "level": "Beginner",
+          "durationMinutes": 270,
+          "categories": "Power BI",
+          "categoryIds": [
+            3
+          ],
+          "cosineDistance": 0.6042
+        },
+        {
+          "id": 6,
+          "title": "Introducción a Python para análisis de datos",
+          "description": "Usa Python y pandas para cargar, limpiar, resumir y explorar conjuntos de datos tabulares.",
+          "level": "Beginner",
+          "durationMinutes": 240,
+          "categories": "Análisis de datos, Python",
+          "categoryIds": [
+            2,
+            5
+          ],
+          "cosineDistance": 0.6507
+        }
+      ]
+    },
+    {
+      "name": "advanced",
+      "request": {
+        "query": "Quiero aprender a analizar ventas con SQL y tengo conocimientos básicos",
+        "level": "Advanced"
+      },
+      "results": [
+        {
+          "id": 105,
+          "title": "Conexión a SQL Server desde Python",
+          "description": "Consulta SQL Server desde pyodbc y convierte resultados para el análisis.",
+          "level": "Advanced",
+          "durationMinutes": 210,
+          "categories": "Python",
+          "categoryIds": [
+            5
+          ],
+          "cosineDistance": 0.5442
+        },
+        {
+          "id": 8,
+          "title": "Optimización de consultas SQL Server",
+          "description": "Interpreta planes de ejecución e índices y aplica técnicas para mejorar consultas de lectura en SQL Server.",
+          "level": "Advanced",
+          "durationMinutes": 360,
+          "categories": "SQL",
+          "categoryIds": [
+            1
+          ],
+          "cosineDistance": 0.568
+        },
+        {
+          "id": 29,
+          "title": "Índices y planes de ejecución en SQL Server",
+          "description": "Interpreta operadores de planes y elige índices para reducir lecturas y mejorar consultas de reporting.",
+          "level": "Advanced",
+          "durationMinutes": 240,
+          "categories": "Administración de bases de datos, SQL",
+          "categoryIds": [
+            6,
+            1
+          ],
+          "cosineDistance": 0.5906
+        },
+        {
+          "id": 11,
+          "title": "T-SQL avanzado: procedimientos y transacciones",
+          "description": "Construye procedimientos almacenados seguros y controla operaciones con transacciones, TRY CATCH y manejo de errores.",
+          "level": "Advanced",
+          "durationMinutes": 330,
+          "categories": "SQL",
+          "categoryIds": [
+            1
+          ],
+          "cosineDistance": 0.5927
+        },
+        {
+          "id": 28,
+          "title": "Query Store y diagnóstico de rendimiento",
+          "description": "Usa Query Store para observar consultas, detectar regresiones y comparar planes de ejecución en SQL Server.",
+          "level": "Advanced",
+          "durationMinutes": 180,
+          "categories": "Administración de bases de datos, SQL",
+          "categoryIds": [
+            6,
+            1
+          ],
+          "cosineDistance": 0.6008
+        },
+        {
+          "id": 123,
+          "title": "Consultas JSON para atributos de productos",
+          "description": "Lee y filtra propiedades JSON en SQL Server y combínalas con columnas relacionales.",
+          "level": "Advanced",
+          "durationMinutes": 150,
+          "categories": "SQL",
+          "categoryIds": [
+            1
+          ],
+          "cosineDistance": 0.606
+        },
+        {
+          "id": 126,
+          "title": "Funciones de ventana para evolución mensual",
+          "description": "Calcula acumulados, posiciones y variación entre periodos conservando el detalle de cada fila.",
+          "level": "Advanced",
+          "durationMinutes": 240,
+          "categories": "SQL",
+          "categoryIds": [
+            1
+          ],
+          "cosineDistance": 0.6124
+        },
+        {
+          "id": 33,
+          "title": "Automatización con SQL Server Agent",
+          "description": "Programa trabajos, pasos y alertas para tareas administrativas recurrentes.",
+          "level": "Advanced",
+          "durationMinutes": 150,
+          "categories": "Administración de bases de datos",
+          "categoryIds": [
+            6
+          ],
+          "cosineDistance": 0.631
+        },
+        {
+          "id": 45,
+          "title": "Estacionalidad en series de ventas",
+          "description": "Separa tendencia y estacionalidad para interpretar cambios recurrentes en ventas mensuales.",
+          "level": "Advanced",
+          "durationMinutes": 210,
+          "categories": "Análisis de datos",
+          "categoryIds": [
+            2
+          ],
+          "cosineDistance": 0.6501
+        },
+        {
+          "id": 102,
+          "title": "Agregación de pedidos con pandas",
+          "description": "Agrupa transacciones por cliente y producto para calcular cantidades, medias y totales.",
+          "level": "Advanced",
+          "durationMinutes": 120,
+          "categories": "Python",
+          "categoryIds": [
+            5
+          ],
+          "cosineDistance": 0.6501
+        }
+      ]
+    },
+    {
+      "name": "duration",
+      "request": {
+        "query": "Quiero crear informes y paneles de datos",
+        "maxDuration": 120
+      },
+      "results": [
+        {
+          "id": 16,
+          "title": "Excel y SQL para preparar informes",
+          "description": "Compara el análisis en hojas de cálculo con consultas SQL y prepara resultados consistentes para informes periódicos.",
+          "level": "Beginner",
+          "durationMinutes": 120,
+          "categories": "Análisis de datos, SQL",
+          "categoryIds": [
+            2,
+            1
+          ],
+          "cosineDistance": 0.558
+        },
+        {
+          "id": 102,
+          "title": "Agregación de pedidos con pandas",
+          "description": "Agrupa transacciones por cliente y producto para calcular cantidades, medias y totales.",
+          "level": "Advanced",
+          "durationMinutes": 120,
+          "categories": "Python",
+          "categoryIds": [
+            5
+          ],
+          "cosineDistance": 0.6539
+        },
+        {
+          "id": 9,
+          "title": "SQL básico para filtrar y resumir datos",
+          "description": "Practica consultas sencillas para buscar registros, ordenar resultados y calcular totales por cliente o producto.",
+          "level": "Beginner",
+          "durationMinutes": 90,
+          "categories": "SQL",
+          "categoryIds": [
+            1
+          ],
+          "cosineDistance": 0.6659
+        }
+      ]
+    },
+    {
+      "name": "category",
+      "request": {
+        "query": "Quiero consultar y transformar datos relacionales",
+        "categoryId": 1
+      },
+      "results": [
+        {
+          "id": 3,
+          "title": "Diseño de bases de datos relacionales",
+          "description": "Diseña tablas normalizadas, claves primarias y foráneas, restricciones y relaciones para aplicaciones de datos.",
+          "level": "Beginner",
+          "durationMinutes": 210,
+          "categories": "SQL",
+          "categoryIds": [
+            1
+          ],
+          "cosineDistance": 0.5395
+        },
+        {
+          "id": 123,
+          "title": "Consultas JSON para atributos de productos",
+          "description": "Lee y filtra propiedades JSON en SQL Server y combínalas con columnas relacionales.",
+          "level": "Advanced",
+          "durationMinutes": 150,
+          "categories": "SQL",
+          "categoryIds": [
+            1
+          ],
+          "cosineDistance": 0.5486
+        },
+        {
+          "id": 9,
+          "title": "SQL básico para filtrar y resumir datos",
+          "description": "Practica consultas sencillas para buscar registros, ordenar resultados y calcular totales por cliente o producto.",
+          "level": "Beginner",
+          "durationMinutes": 90,
+          "categories": "SQL",
+          "categoryIds": [
+            1
+          ],
+          "cosineDistance": 0.5793
+        },
+        {
+          "id": 10,
+          "title": "Consultas SQL para inventario y logística",
+          "description": "Combina existencias, pedidos y envíos para detectar roturas de stock y medir tiempos de entrega.",
+          "level": "Intermediate",
+          "durationMinutes": 210,
+          "categories": "Análisis de datos, SQL",
+          "categoryIds": [
+            2,
+            1
+          ],
+          "cosineDistance": 0.6065
+        },
+        {
+          "id": 127,
+          "title": "JOIN de ventas, clientes y productos",
+          "description": "Relaciona tablas transaccionales y detecta filas sin correspondencia mediante consultas de unión.",
+          "level": "Beginner",
+          "durationMinutes": 270,
+          "categories": "SQL",
+          "categoryIds": [
+            1
+          ],
+          "cosineDistance": 0.6126
+        },
+        {
+          "id": 130,
+          "title": "Tablas temporales para seguir cambios",
+          "description": "Consulta versiones históricas y reconstruye el estado de una fila con tablas temporales.",
+          "level": "Beginner",
+          "durationMinutes": 360,
+          "categories": "SQL",
+          "categoryIds": [
+            1
+          ],
+          "cosineDistance": 0.6134
+        },
+        {
+          "id": 1,
+          "title": "Fundamentos de SQL para análisis de ventas",
+          "description": "Aprende a consultar tablas de ventas con SELECT, filtros, agrupaciones y JOIN para responder preguntas habituales del negocio.",
+          "level": "Beginner",
+          "durationMinutes": 180,
+          "categories": "Análisis de datos, SQL",
+          "categoryIds": [
+            2,
+            1
+          ],
+          "cosineDistance": 0.6228
+        },
+        {
+          "id": 16,
+          "title": "Excel y SQL para preparar informes",
+          "description": "Compara el análisis en hojas de cálculo con consultas SQL y prepara resultados consistentes para informes periódicos.",
+          "level": "Beginner",
+          "durationMinutes": 120,
+          "categories": "Análisis de datos, SQL",
+          "categoryIds": [
+            2,
+            1
+          ],
+          "cosineDistance": 0.626
+        },
+        {
+          "id": 7,
+          "title": "Integración de datos en Azure",
+          "description": "Conoce los conceptos de integración y transformación de datos en servicios de Azure para construir flujos analíticos.",
+          "level": "Intermediate",
+          "durationMinutes": 270,
+          "categories": "Azure, SQL",
+          "categoryIds": [
+            4,
+            1
+          ],
+          "cosineDistance": 0.6313
+        },
+        {
+          "id": 8,
+          "title": "Optimización de consultas SQL Server",
+          "description": "Interpreta planes de ejecución e índices y aplica técnicas para mejorar consultas de lectura en SQL Server.",
+          "level": "Advanced",
+          "durationMinutes": 360,
+          "categories": "SQL",
+          "categoryIds": [
+            1
+          ],
+          "cosineDistance": 0.6397
+        }
+      ]
+    },
+    {
+      "name": "none",
+      "request": {
+        "query": "Quiero aprender diseño de moda"
+      },
+      "results": []
+    },
+    {
+      "name": "combined",
+      "request": {
+        "query": "Quiero automatizar análisis de datos",
+        "level": "Beginner",
+        "maxDuration": 180
+      },
+      "results": [
+        {
+          "id": 16,
+          "title": "Excel y SQL para preparar informes",
+          "description": "Compara el análisis en hojas de cálculo con consultas SQL y prepara resultados consistentes para informes periódicos.",
+          "level": "Beginner",
+          "durationMinutes": 120,
+          "categories": "Análisis de datos, SQL",
+          "categoryIds": [
+            2,
+            1
+          ],
+          "cosineDistance": 0.6414
+        },
+        {
+          "id": 73,
+          "title": "Calidad de datos en pipelines",
+          "description": "Aplica reglas de completitud, unicidad y consistencia durante transformaciones.",
+          "level": "Beginner",
+          "durationMinutes": 150,
+          "categories": "Ingeniería de datos",
+          "categoryIds": [
+            7
+          ],
+          "cosineDistance": 0.6557
+        },
+        {
+          "id": 52,
+          "title": "Clasificación de abandono de clientes",
+          "description": "Prepara variables para estimar qué clientes podrían dejar de utilizar un servicio.",
+          "level": "Beginner",
+          "durationMinutes": 120,
+          "categories": "Aprendizaje automático",
+          "categoryIds": [
+            9
+          ],
+          "cosineDistance": 0.6567
+        },
+        {
+          "id": 91,
+          "title": "Transformaciones con Dataflows Gen2",
+          "description": "Prepara datos con pasos visuales reutilizables y publica resultados en Fabric.",
+          "level": "Beginner",
+          "durationMinutes": 90,
+          "categories": "Microsoft Fabric",
+          "categoryIds": [
+            8
+          ],
+          "cosineDistance": 0.6634
+        },
+        {
+          "id": 94,
+          "title": "Diagnóstico de informes con Performance Analyzer",
+          "description": "Localiza visuales lentos y separa el tiempo de consulta del renderizado.",
+          "level": "Beginner",
+          "durationMinutes": 180,
+          "categories": "Power BI",
+          "categoryIds": [
+            3
+          ],
+          "cosineDistance": 0.6683
+        },
+        {
+          "id": 103,
+          "title": "Calendarios y zonas horarias con pandas",
+          "description": "Normaliza fechas, zonas horarias y calendarios para analizar eventos en periodos coherentes.",
+          "level": "Beginner",
+          "durationMinutes": 150,
+          "categories": "Python",
+          "categoryIds": [
+            5
+          ],
+          "cosineDistance": 0.6708
+        },
+        {
+          "id": 19,
+          "title": "Python para limpiar datos de clientes",
+          "description": "Detecta valores ausentes, formatos inconsistentes y duplicados en datos de clientes con pandas.",
+          "level": "Beginner",
+          "durationMinutes": 150,
+          "categories": "Análisis de datos, Python",
+          "categoryIds": [
+            2,
+            5
+          ],
+          "cosineDistance": 0.6732
+        },
+        {
+          "id": 1,
+          "title": "Fundamentos de SQL para análisis de ventas",
+          "description": "Aprende a consultar tablas de ventas con SELECT, filtros, agrupaciones y JOIN para responder preguntas habituales del negocio.",
+          "level": "Beginner",
+          "durationMinutes": 180,
+          "categories": "Análisis de datos, SQL",
+          "categoryIds": [
+            2,
+            1
+          ],
+          "cosineDistance": 0.6741
+        },
+        {
+          "id": 4,
+          "title": "Power BI: primeros informes de ventas",
+          "description": "Conecta datos de ventas, crea visualizaciones y construye un informe interactivo para explorar resultados comerciales.",
+          "level": "Beginner",
+          "durationMinutes": 150,
+          "categories": "Análisis de datos, Power BI",
+          "categoryIds": [
+            2,
+            3
+          ],
+          "cosineDistance": 0.6884
+        },
+        {
+          "id": 61,
+          "title": "Validación cruzada y métricas de clasificación",
+          "description": "Compara precisión, recall y otras métricas con particiones repetibles.",
+          "level": "Beginner",
+          "durationMinutes": 90,
+          "categories": "Aprendizaje automático",
+          "categoryIds": [
+            9
+          ],
+          "cosineDistance": 0.698
+        }
+      ]
+    },
+    {
+      "name": "paraphrase",
+      "request": {
+        "query": "Necesito convertir cifras comerciales en un tablero interactivo con gráficos"
+      },
+      "results": [
+        {
+          "id": 46,
+          "title": "Indicadores de conversión comercial",
+          "description": "Define tasas de conversión desde visitas hasta ventas y valida numeradores y denominadores.",
+          "level": "Beginner",
+          "durationMinutes": 240,
+          "categories": "Análisis de datos",
+          "categoryIds": [
+            2
+          ],
+          "cosineDistance": 0.6203
+        },
+        {
+          "id": 4,
+          "title": "Power BI: primeros informes de ventas",
+          "description": "Conecta datos de ventas, crea visualizaciones y construye un informe interactivo para explorar resultados comerciales.",
+          "level": "Beginner",
+          "durationMinutes": 150,
+          "categories": "Análisis de datos, Power BI",
+          "categoryIds": [
+            2,
+            3
+          ],
+          "cosineDistance": 0.6368
+        },
+        {
+          "id": 17,
+          "title": "Power BI para analizar finanzas",
+          "description": "Construye indicadores de ingresos, gastos y margen, y explora desviaciones frente al presupuesto con informes interactivos.",
+          "level": "Beginner",
+          "durationMinutes": 180,
+          "categories": "Análisis de datos, Power BI",
+          "categoryIds": [
+            2,
+            3
+          ],
+          "cosineDistance": 0.6825
+        },
+        {
+          "id": 98,
+          "title": "Navegación de informes con marcadores",
+          "description": "Diseña páginas, botones y marcadores para guiar la exploración de indicadores.",
+          "level": "Intermediate",
+          "durationMinutes": 300,
+          "categories": "Power BI",
+          "categoryIds": [
+            3
+          ],
+          "cosineDistance": 0.6969
+        }
+      ]
+    }
+  ],
+  "rag": [],
+  "security": [
+    {
+      "columns": [
+        "EffectiveUser",
+        "VisibleCourses"
+      ],
+      "rows": [
+        [
+          "CourseReaderDemo",
+          131
+        ]
+      ]
+    },
+    {
+      "columns": [
+        "ExpectedError",
+        "Result"
+      ],
+      "rows": [
+        [
+          229,
+          "Reader no puede leer la tabla base"
+        ]
+      ]
+    },
+    {
+      "columns": [
+        "ExpectedError",
+        "Result"
+      ],
+      "rows": [
+        [
+          229,
+          "Reader no puede editar"
+        ]
+      ]
+    },
+    {
+      "columns": [
+        "EffectiveUser",
+        "UpdatedRows"
+      ],
+      "rows": [
+        [
+          "CourseEditorDemo",
+          1
+        ]
+      ]
+    },
+    {
+      "columns": [
+        "ExpectedError",
+        "Result"
+      ],
+      "rows": [
+        [
+          229,
+          "Editor no puede borrar"
+        ]
+      ]
+    }
+  ],
+  "catalog": {
+    "courses": 131,
+    "pendingEmbeddings": 0
+  }
+}

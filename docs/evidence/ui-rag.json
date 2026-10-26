@@ -1,0 +1,209 @@
+{
+  "question": "Quiero aprender a analizar ventas con SQL y tengo conocimientos básicos",
+  "sources": [
+    {
+      "id": 1,
+      "title": "Fundamentos de SQL para análisis de ventas",
+      "description": "Aprende a consultar tablas de ventas con SELECT, filtros, agrupaciones y JOIN para responder preguntas habituales del negocio.",
+      "level": "Beginner",
+      "durationMinutes": 180,
+      "categories": "Análisis de datos, SQL",
+      "categoryIds": [
+        2,
+        1
+      ],
+      "cosineDistance": 0.2883
+    },
+    {
+      "id": 9,
+      "title": "SQL básico para filtrar y resumir datos",
+      "description": "Practica consultas sencillas para buscar registros, ordenar resultados y calcular totales por cliente o producto.",
+      "level": "Beginner",
+      "durationMinutes": 90,
+      "categories": "SQL",
+      "categoryIds": [
+        1
+      ],
+      "cosineDistance": 0.4661
+    },
+    {
+      "id": 124,
+      "title": "Consultas para segmentar clientes",
+      "description": "Construye consultas con filtros y agrupaciones para comparar compras, frecuencia y valor por segmento.",
+      "level": "Beginner",
+      "durationMinutes": 180,
+      "categories": "SQL",
+      "categoryIds": [
+        1
+      ],
+      "cosineDistance": 0.5048
+    },
+    {
+      "id": 127,
+      "title": "JOIN de ventas, clientes y productos",
+      "description": "Relaciona tablas transaccionales y detecta filas sin correspondencia mediante consultas de unión.",
+      "level": "Beginner",
+      "durationMinutes": 270,
+      "categories": "SQL",
+      "categoryIds": [
+        1
+      ],
+      "cosineDistance": 0.5219
+    }
+  ],
+  "context": "[\n  {\n    \"id\": 1,\n    \"title\": \"Fundamentos de SQL para análisis de ventas\",\n    \"description\": \"Aprende a consultar tablas de ventas con SELECT, filtros, agrupaciones y JOIN para responder preguntas habituales del negocio.\",\n    \"level\": \"Beginner\",\n    \"durationMinutes\": 180,\n    \"categories\": \"Análisis de datos, SQL\",\n    \"categoryIds\": [\n      2,\n      1\n    ],\n    \"cosineDistance\": 0.2883\n  },\n  {\n    \"id\": 9,\n    \"title\": \"SQL básico para filtrar y resumir datos\",\n    \"description\": \"Practica consultas sencillas para buscar registros, ordenar resultados y calcular totales por cliente o producto.\",\n    \"level\": \"Beginner\",\n    \"durationMinutes\": 90,\n    \"categories\": \"SQL\",\n    \"categoryIds\": [\n      1\n    ],\n    \"cosineDistance\": 0.4661\n  },\n  {\n    \"id\": 124,\n    \"title\": \"Consultas para segmentar clientes\",\n    \"description\": \"Construye consultas con filtros y agrupaciones para comparar compras, frecuencia y valor por segmento.\",\n    \"level\": \"Beginner\",\n    \"durationMinutes\": 180,\n    \"categories\": \"SQL\",\n    \"categoryIds\": [\n      1\n    ],\n    \"cosineDistance\": 0.5048\n  },\n  {\n    \"id\": 127,\n    \"title\": \"JOIN de ventas, clientes y productos\",\n    \"description\": \"Relaciona tablas transaccionales y detecta filas sin correspondencia mediante consultas de unión.\",\n    \"level\": \"Beginner\",\n    \"durationMinutes\": 270,\n    \"categories\": \"SQL\",\n    \"categoryIds\": [\n      1\n    ],\n    \"cosineDistance\": 0.5219\n  }\n]",
+  "model": "qwen2.5:1.5b",
+  "generated": true,
+  "answer": "Fundamentos de SQL para análisis de ventas [1]\nPrincipiante · 180 min\nEsta es la mejor opción porque se enfoca en la consulta de tablas de ventas, lo que es crucial para analizar ventas con SQL.\n\nSQL básico para filtrar y resumir datos [9]\nPrincipiante · 90 min\nEs una opción interesante porque se centra en consultas básicas para filtrar y resumir datos, lo que es fundamental para entender cómo se manejan las ventas.\n\nConsultas para segmentar clientes [124]\nPrincipiante · 180 min\nEsta opción es excelente porque se enfoca en segmentar clientes, lo que es crucial para analizar ventas y entender las tendencias de los clientes.",
+  "modelOutput": {
+    "recommendations": [
+      {
+        "courseId": 1,
+        "reason": "Esta es la mejor opción porque se enfoca en la consulta de tablas de ventas, lo que es crucial para analizar ventas con SQL."
+      },
+      {
+        "courseId": 9,
+        "reason": "Es una opción interesante porque se centra en consultas básicas para filtrar y resumir datos, lo que es fundamental para entender cómo se manejan las ventas."
+      },
+      {
+        "courseId": 124,
+        "reason": "Esta opción es excelente porque se enfoca en segmentar clientes, lo que es crucial para analizar ventas y entender las tendencias de los clientes."
+      }
+    ]
+  },
+  "citations": [
+    1,
+    9,
+    124
+  ],
+  "prompt": "PREGUNTA_JSON:\n\"Quiero aprender a analizar ventas con SQL y tengo conocimientos básicos\"\nFUENTES_JSON:\n[\n  {\n    \"id\": 1,\n    \"title\": \"Fundamentos de SQL para análisis de ventas\",\n    \"description\": \"Aprende a consultar tablas de ventas con SELECT, filtros, agrupaciones y JOIN para responder preguntas habituales del negocio.\",\n    \"level\": \"Beginner\",\n    \"durationMinutes\": 180,\n    \"categories\": \"Análisis de datos, SQL\",\n    \"categoryIds\": [\n      2,\n      1\n    ],\n    \"cosineDistance\": 0.2883\n  },\n  {\n    \"id\": 9,\n    \"title\": \"SQL básico para filtrar y resumir datos\",\n    \"description\": \"Practica consultas sencillas para buscar registros, ordenar resultados y calcular totales por cliente o producto.\",\n    \"level\": \"Beginner\",\n    \"durationMinutes\": 90,\n    \"categories\": \"SQL\",\n    \"categoryIds\": [\n      1\n    ],\n    \"cosineDistance\": 0.4661\n  },\n  {\n    \"id\": 124,\n    \"title\": \"Consultas para segmentar clientes\",\n    \"description\": \"Construye consultas con filtros y agrupaciones para comparar compras, frecuencia y valor por segmento.\",\n    \"level\": \"Beginner\",\n    \"durationMinutes\": 180,\n    \"categories\": \"SQL\",\n    \"categoryIds\": [\n      1\n    ],\n    \"cosineDistance\": 0.5048\n  },\n  {\n    \"id\": 127,\n    \"title\": \"JOIN de ventas, clientes y productos\",\n    \"description\": \"Relaciona tablas transaccionales y detecta filas sin correspondencia mediante consultas de unión.\",\n    \"level\": \"Beginner\",\n    \"durationMinutes\": 270,\n    \"categories\": \"SQL\",\n    \"categoryIds\": [\n      1\n    ],\n    \"cosineDistance\": 0.5219\n  }\n]",
+  "generationSeconds": 4.66,
+  "results": [
+    {
+      "id": 1,
+      "title": "Fundamentos de SQL para análisis de ventas",
+      "description": "Aprende a consultar tablas de ventas con SELECT, filtros, agrupaciones y JOIN para responder preguntas habituales del negocio.",
+      "level": "Beginner",
+      "durationMinutes": 180,
+      "categories": "Análisis de datos, SQL",
+      "categoryIds": [
+        2,
+        1
+      ],
+      "cosineDistance": 0.2883
+    },
+    {
+      "id": 9,
+      "title": "SQL básico para filtrar y resumir datos",
+      "description": "Practica consultas sencillas para buscar registros, ordenar resultados y calcular totales por cliente o producto.",
+      "level": "Beginner",
+      "durationMinutes": 90,
+      "categories": "SQL",
+      "categoryIds": [
+        1
+      ],
+      "cosineDistance": 0.4661
+    },
+    {
+      "id": 124,
+      "title": "Consultas para segmentar clientes",
+      "description": "Construye consultas con filtros y agrupaciones para comparar compras, frecuencia y valor por segmento.",
+      "level": "Beginner",
+      "durationMinutes": 180,
+      "categories": "SQL",
+      "categoryIds": [
+        1
+      ],
+      "cosineDistance": 0.5048
+    },
+    {
+      "id": 127,
+      "title": "JOIN de ventas, clientes y productos",
+      "description": "Relaciona tablas transaccionales y detecta filas sin correspondencia mediante consultas de unión.",
+      "level": "Beginner",
+      "durationMinutes": 270,
+      "categories": "SQL",
+      "categoryIds": [
+        1
+      ],
+      "cosineDistance": 0.5219
+    },
+    {
+      "id": 23,
+      "title": "Azure SQL Database: fundamentos",
+      "description": "Aprende a aprovisionar y consultar una base de datos SQL administrada en Azure, y entiende sus opciones de conectividad.",
+      "level": "Beginner",
+      "durationMinutes": 180,
+      "categories": "Azure, SQL",
+      "categoryIds": [
+        4,
+        1
+      ],
+      "cosineDistance": 0.5261
+    },
+    {
+      "id": 16,
+      "title": "Excel y SQL para preparar informes",
+      "description": "Compara el análisis en hojas de cálculo con consultas SQL y prepara resultados consistentes para informes periódicos.",
+      "level": "Beginner",
+      "durationMinutes": 120,
+      "categories": "Análisis de datos, SQL",
+      "categoryIds": [
+        2,
+        1
+      ],
+      "cosineDistance": 0.5317
+    },
+    {
+      "id": 4,
+      "title": "Power BI: primeros informes de ventas",
+      "description": "Conecta datos de ventas, crea visualizaciones y construye un informe interactivo para explorar resultados comerciales.",
+      "level": "Beginner",
+      "durationMinutes": 150,
+      "categories": "Análisis de datos, Power BI",
+      "categoryIds": [
+        2,
+        3
+      ],
+      "cosineDistance": 0.5489
+    },
+    {
+      "id": 13,
+      "title": "Introducción a la administración de SQL Server",
+      "description": "Revisa configuración básica, usuarios, trabajos, mantenimiento y supervisión de una instancia de SQL Server.",
+      "level": "Beginner",
+      "durationMinutes": 240,
+      "categories": "Administración de bases de datos, SQL",
+      "categoryIds": [
+        6,
+        1
+      ],
+      "cosineDistance": 0.5779
+    },
+    {
+      "id": 97,
+      "title": "Modelo estrella para ventas minoristas",
+      "description": "Organiza hechos y dimensiones de ventas, fechas y productos para facilitar filtros y agregaciones.",
+      "level": "Beginner",
+      "durationMinutes": 270,
+      "categories": "Power BI",
+      "categoryIds": [
+        3
+      ],
+      "cosineDistance": 0.6042
+    },
+    {
+      "id": 6,
+      "title": "Introducción a Python para análisis de datos",
+      "description": "Usa Python y pandas para cargar, limpiar, resumir y explorar conjuntos de datos tabulares.",
+      "level": "Beginner",
+      "durationMinutes": 240,
+      "categories": "Análisis de datos, Python",
+      "categoryIds": [
+        2,
+        5
+      ],
+      "cosineDistance": 0.6507
+    }
+  ]
+}
