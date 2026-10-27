@@ -1,17 +1,15 @@
 # Recomendador de cursos por intereses
 
-Miniproyecto de preparación para DP-800, **nivel 3 avanzado: búsqueda semántica y RAG local**. Recomienda cursos según una necesidad, nivel, duración y temática, y genera una explicación con un LLM usando los cursos recuperados como contexto. El catálogo contiene 131 cursos de prueba; no representa una oferta comercial real.
+Miniproyecto de preparación para DP-800, **nivel 3 avanzado: búsqueda semántica y RAG local**. Recomienda cursos según una necesidad, nivel, duración y temática, y genera una explicación con un LLM usando los cursos recuperados como contexto. El catálogo contiene 131 cursos para probar.
 
 ## Inicio rápido desde cero
-
-Repositorio privado: https://github.com/cEgXOl/dp800-course-recommender. El profesor necesita una invitación para acceder. Con GitHub CLI autenticado:
 
 ```powershell
 gh repo clone cEgXOl/dp800-course-recommender
 cd dp800-course-recommender
 ```
 
-Requisitos: Windows 11, SQL Server 2025 local, SSMS 22 o VS Code con mssql, Git, Python 3.10+, ODBC Driver 18 y Ollama. No hacen falta recursos Azure ni una clave API. Los modelos se descargan una vez y la inferencia consume CPU/GPU y memoria del equipo; los tokens generados localmente no se facturan.
+Requisitos: Windows 11, SQL Server 2025 local, SSMS 22 o VS Code con mssql, Git, Python 3.10+, ODBC Driver 18 y Ollama. No hacen falta recursos Azure ni una clave API. Los modelos se descargan una vez y la inferencia consume CPU/GPU y memoria del equipo.
 
 En PowerShell, desde la carpeta descargada del repositorio:
 
