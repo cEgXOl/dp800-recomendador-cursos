@@ -9,7 +9,7 @@ gh repo clone cEgXOl/dp800-course-recommender
 cd dp800-course-recommender
 ```
 
-Requisitos: Windows 11, SQL Server 2025 local, SSMS 22 o VS Code con mssql, Git, Python 3.10+, ODBC Driver 18 y Ollama. No hacen falta recursos Azure ni una clave API. Los modelos se descargan una vez y la inferencia consume CPU/GPU y memoria del equipo.
+Requisitos: Windows 11, SQL Server 2025 local, SSMS 22 o VS Code con mssql, Git, Python 3.10+, ODBC Driver 18 y Ollama.
 
 En PowerShell, desde la carpeta descargada del repositorio:
 
@@ -100,7 +100,7 @@ Tras crear la tabla y cargar el catálogo:
 5. Define `COURSE_RECOMMENDER_SQL_CONNECTION_STRING` con una conexión a esa base de datos. Ejemplo PowerShell para autenticación integrada: `$env:COURSE_RECOMMENDER_SQL_CONNECTION_STRING = 'Driver={ODBC Driver 18 for SQL Server};Server=localhost;Database=CourseRecommender;Trusted_Connection=yes;Encrypt=yes;TrustServerCertificate=yes;'`. Sustituye servidor y base de datos según tu instalación.
 6. Ejecuta `.\.venv\Scripts\python.exe scripts\generate_embeddings.py`. El programa envía los textos a Ollama en `localhost`, usando el formato de documento `title: ... | text: ...`, valida que cada vector tenga 768 dimensiones y actualiza solo los cursos sin embedding. En la futura búsqueda, la petición del usuario debe llevar el prefijo `task: search result | query: ...` para usar el formato de recuperación recomendado por EmbeddingGemma.
 
-La generación no consume tokens facturables ni llama a Azure OpenAI; usa memoria y capacidad de CPU/GPU del equipo. La imagen del modelo ocupa aproximadamente 621 MB. Si Ollama o SQL Server no están disponibles, el programa informa del error y revierte la transacción.
+Si Ollama o SQL Server no están disponibles, el programa informa del error y revierte la transacción.
 
 ## Interfaz local
 
