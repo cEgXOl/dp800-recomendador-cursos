@@ -1,6 +1,6 @@
 # Recomendador de cursos por intereses
 
-Miniproyecto de preparación para DP-800, **nivel 3 avanzado: búsqueda semántica y RAG local**. Recomienda cursos según una necesidad, nivel, duración y temática, y genera una explicación con un LLM usando los cursos recuperados como contexto. El catálogo contiene 131 cursos para probar.
+Miniproyecto de preparación para DP-800, **Con búsqueda semántica y RAG local**. Recomienda cursos según una necesidad, nivel, duración y temática, y genera una explicación con un LLM usando los cursos recuperados como contexto. El catálogo contiene 131 cursos para probar.
 
 ## Inicio rápido desde cero
 
@@ -93,8 +93,8 @@ Después de ejecutar `sql/01_schema.sql`, ejecuta `sql/02_seed_catalog.sql` en l
 
 Tras crear la tabla y cargar el catálogo:
 
-1. Instala [Ollama](https://ollama.com/download) y comprueba que esté iniciado. EmbeddingGemma requiere Ollama 0.11.10 o posterior.
-2. Descarga el modelo local: `ollama pull embeddinggemma` (aprox. 621 MB).
+1. Instala [Ollama](https://ollama.com/download).
+2. Descarga el modelo local: `ollama pull embeddinggemma`.
 3. Ejecuta `sql/03_add_embedding_storage.sql` en la base de datos. Añade `VECTOR(768)` y campos para registrar el modelo y la fecha de generación.
 4. Instala Python 3.10 o posterior y Microsoft ODBC Driver 18 for SQL Server. Crea el entorno e instala la dependencia: `python -m venv .venv` y `.\.venv\Scripts\python.exe -m pip install -r requirements.txt`.
 5. Define `COURSE_RECOMMENDER_SQL_CONNECTION_STRING` con una conexión a esa base de datos. Ejemplo PowerShell para autenticación integrada: `$env:COURSE_RECOMMENDER_SQL_CONNECTION_STRING = 'Driver={ODBC Driver 18 for SQL Server};Server=localhost;Database=CourseRecommender;Trusted_Connection=yes;Encrypt=yes;TrustServerCertificate=yes;'`. Sustituye servidor y base de datos según tu instalación.
@@ -115,7 +115,7 @@ Después abre <http://127.0.0.1:8000>. La página permite describir qué se quie
 
 Si tu instancia o base de datos tienen otro nombre, define `COURSE_RECOMMENDER_SQL_CONNECTION_STRING` en esa sesión de PowerShell antes de ejecutar el lanzador. La aplicación solo escucha en `127.0.0.1` y no expone la interfaz a la red.
 
-## Fase 5: medición inicial con Query Store
+## Fase 4: medición inicial con Query Store
 
 Query Store identifica las sentencias por `object_id` de `dbo.usp_RecommendCourses`, evitando contar los propios diagnósticos. Ejecuta `sql/04_query_store_baseline.sql` para leer duración, CPU y lecturas por sentencia y plan. Si está desactivado, habilítalo con el comando mostrado y realiza búsquedas. `sql/05_query_store_plan.sql` devuelve el plan y sus operadores estimados. Una llamada al procedimiento puede ejecutar más de una sentencia; el benchmark suma sus métricas y divide por el número de llamadas, no por las ejecuciones internas.
 
@@ -176,9 +176,3 @@ La reducción de lecturas es aproximadamente del 71 %. La diferencia de latencia
 El proyecto demuestra cómo combinar restricciones relacionales, permisos y programación T-SQL con embeddings y un LLM local. Los problemas encontrados (conversión ODBC ntext/VECTOR, alias reservado, identificación de Query Store y citas inconsistentes) se documentan junto con sus correcciones. La optimización muestra por qué una reducción de lecturas no garantiza una mejora de latencia.
 
 El catálogo es ficticio y el RAG puede cometer errores; no contiene precios, matrícula ni oferta formativa real. El modelo de embeddings y su dimensión deben cambiarse conjuntamente y obligan a regenerar vectores. Para producción se requerirían cuenta de servicio dedicada, gestión operativa y una evaluación de relevancia más amplia.
-
-## Entrega y demostración
-
-Entregables: [informe técnico PDF](output/pdf/informe-dp800.pdf), [PowerPoint editable](presentation/dp800-project.pptx), [guion de 5–8 minutos](docs/guion-presentacion.md) y [matriz final de cumplimiento](docs/cumplimiento-final.md). La auditoría inicial se conserva como historial y la comparación controlada está en [optimizacion-controlada.md](docs/optimizacion-controlada.md).
-
-Para ejecutar el proyecto solo hace falta `requirements.txt`. La regeneración del PDF es opcional y usa `requirements-docs.txt`; el generador del PowerPoint usa el runtime de autoría de Codex. El PPTX entregado es editable directamente en PowerPoint, sin ese runtime.
