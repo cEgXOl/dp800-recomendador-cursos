@@ -1,9 +1,5 @@
 # Resultados de las pruebas funcionales
 
-> Registro de pruebas del prototipo inicial. La validación final añade un octavo caso de paráfrasis, cuatro pruebas unitarias, seguridad y RAG. Sus peticiones y respuestas exactas están en [evidence/validation.json](evidence/validation.json); la reproducción está en [evidence/reproduction-validation.json](evidence/reproduction-validation.json). Algunas consultas se formularon de manera diferente y sus recuentos pueden variar.
-
-Validación manual de la interfaz con el catálogo de prueba y Ollama `embeddinggemma`.
-
 | N.º | Caso | Filtros | Resultado |
 |---:|---|---|---|
 | 1 | Analizar ventas con SQL y conocimientos básicos | Ninguno | Correcto. Los cursos de SQL y análisis de ventas aparecen primero. |
